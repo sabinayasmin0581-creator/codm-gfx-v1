@@ -2,6 +2,7 @@ package com.zaman.gfxtool;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import java.io.*;
 
 public class ScreenManager {
 
@@ -14,19 +15,19 @@ public class ScreenManager {
         String dpiValue;
 
         switch (selectedIndex) {
-            case 0: // 6.5 inch
+            case 0:
                 screenSizeValue = "6.5";
                 dpiValue = "400";
                 break;
-            case 2: // 8.3 inch
+            case 2:
                 screenSizeValue = "8.3";
                 dpiValue = "320";
                 break;
-            case 3: // 13 inch
+            case 3:
                 screenSizeValue = "13.0";
                 dpiValue = "240";
                 break;
-            default: // 6.8 inch
+            default:
                 screenSizeValue = "6.8";
                 dpiValue = "388";
                 break;
@@ -36,33 +37,44 @@ public class ScreenManager {
         editor.putString("dpiValue", dpiValue);
         editor.apply();
 
-        // Write to CODM config file
         writeToConfig(screenSizeValue, dpiValue);
     }
 
     private static void writeToConfig(String screenSize, String dpi) {
         try {
             String configPath = "/sdcard/Android/data/com.activision.callofduty.shooter/files/userdata/user_custom_config.cfg";
-            java.io.File file = new java.io.File(configPath);
-            if (!file.exists()) return;
+            File file = new File(configPath);
 
-            java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader(file));
+            // If file doesnt exist, create it with default content
+            if (!file.exists()) {
+                file.getParentFile().mkdirs();
+                file.createNewFile();
+            }
+
+            BufferedReader reader = new BufferedReader(new FileReader(file));
             StringBuilder sb = new StringBuilder();
             String line;
+            boolean screenSizeFound = false;
+            boolean dpiFound = false;
+
             while ((line = reader.readLine()) != null) {
-                if (line.startsWith("seta r_customWidth") || line.startsWith("bind r_customWidth")) {
-                    // skip old screen lines
-                } else if (line.startsWith("seta r_screenSizeInch")) {
+                if (line.startsWith("seta r_screenSizeInch")) {
                     sb.append("seta r_screenSizeInch \"").append(screenSize).append("\"\n");
+                    screenSizeFound = true;
                 } else if (line.startsWith("seta r_displayDPI")) {
                     sb.append("seta r_displayDPI \"").append(dpi).append("\"\n");
+                    dpiFound = true;
                 } else {
                     sb.append(line).append("\n");
                 }
             }
             reader.close();
 
-            java.io.BufferedWriter writer = new java.io.BufferedWriter(new java.io.FileWriter(file));
+            // If keys didnt exist, append them
+            if (!screenSizeFound) sb.append("seta r_screenSizeInch \"").append(screenSize).append("\"\n");
+            if (!dpiFound) sb.append("seta r_displayDPI \"").append(dpi).append("\"\n");
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
             writer.write(sb.toString());
             writer.close();
 

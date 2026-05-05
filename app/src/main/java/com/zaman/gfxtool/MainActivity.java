@@ -129,6 +129,12 @@ public class MainActivity extends AppCompatActivity {
         btnLaunchCODM.setOnClickListener(v -> { applySettings(); launchCODM(); });
         btnBackupConfig.setOnClickListener(v -> { ConfigManager.backup(this); Toast.makeText(this, "Config backed up!", Toast.LENGTH_SHORT).show(); });
         btnRestoreConfig.setOnClickListener(v -> { ConfigManager.restore(this); loadSavedSettings(); Toast.makeText(this, "Config restored!", Toast.LENGTH_SHORT).show(); });
+        // Auto start floating service if it was on before
+        if (prefs.getBoolean("floatingOverlay", false)) {
+            switchFloatingOverlay.setChecked(true);
+            checkOverlayPermissionAndStart();
+        }
+
         switchFloatingOverlay.setOnCheckedChangeListener((btn, isChecked) -> {
             if (isChecked) checkOverlayPermissionAndStart();
             else stopService(new Intent(this, FloatingService.class));

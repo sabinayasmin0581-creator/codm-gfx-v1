@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0A0A0F">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ZAMAN GFX TOOL V1" android:textColor="#00E5FF" android:textSize="22sp"
+            android:textStyle="bold" android:gravity="center" android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.1" android:paddingBottom="4dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CODM Performance Optimizer" android:textColor="#80FFFFFF"
+            android:textSize="12sp" android:gravity="center" android:paddingBottom="16dp" />
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#1A1A2E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⚡ QUICK PROFILES" android:textColor="#00E5FF"
+                    android:textSize="13sp" android:textStyle="bold" android:paddingBottom="10dp" />
+                <RadioGroup android:id="@+id/rgProfiles" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rbCompetitive" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="🏆 Compete" android:textColor="#FFFFFF" android:textSize="11sp"
+                        android:gravity="center" android:buttonTint="#00E5FF" />
+                    <RadioButton android:id="@+id/rbBalanced" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="⚖️ Balanced" android:textColor="#FFFFFF" android:textSize="11sp"
+                        android:gravity="center" android:buttonTint="#00E5FF" android:checked="true" />
+                    <RadioButton android:id="@+id/rbStreamer" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="🎥 Stream" android:textColor="#FFFFFF" android:textSize="11sp"
+                        android:gravity="center" android:buttonTint="#00E5FF" />
+                    <RadioButton android:id="@+id/rbBattery" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="🔋 Battery" android:textColor="#FFFFFF" android:textSize="11sp"
+                        android:gravity="center" android:buttonTint="#00E5FF" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#1A1A2E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎮 GRAPHICS" android:textColor="#00E5FF"
+                    android:textSize="13sp" android:textStyle="bold" android:paddingBottom="10dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="FPS Limit" android:textColor="#CCCCCC" android:textSize="12sp" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerFPS" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:background="@drawable/spinner_bg" android:paddingStart="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#2A2A3E" android:layout_marginVertical="10dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Resolution" android:textColor="#CCCCCC" android:textSize="12sp" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerResolution" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:background="@drawable/spinner_bg" android:paddingStart="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#2A2A3E" android:layout_marginVertical="10dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Texture Quality" android:textColor="#CCCCCC" android:textSize="12sp" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerTexture" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:background="@drawable/spinner_bg" android:paddingStart="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#2A2A3E" android:layout_marginVertical="10dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Shadow Quality" android:textColor="#CCCCCC" android:textSize="12sp" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerShadow" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:background="@drawable/spinner_bg" android:paddingStart="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#2A2A3E" android:layout_marginVertical="10dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Anti-Aliasing" android:textColor="#CCCCCC" android:textSize="12sp" android:paddingBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerAntiAlias" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:background="@drawable/spinner_bg" android:paddingStart="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#2A2A3E" android:layout_marginVertical="10dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Screen Scale" android:textColor="#CCCCCC" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvScreenScaleValue" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="100%" android:textColor="#00E5FF" android:textSize="12sp" />
+                </LinearLayout>
+                <SeekBar android:id="@+id/seekbarScreenScale" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:max="50" android:progress="50"
+                    android:progressTint="#00E5FF" android:thumbTint="#00E5FF" android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#1A1A2E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔧 PERFORMANCE TWEAKS" android:textColor="#00E5FF"
+                    android:textSize="13sp" android:textStyle="bold" android:paddingBottom="10dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Motion Blur" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchMotionBlur" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Battery Saver Mode" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchBatterySaver" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Anti-Thermal Throttle" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchAntiThrottle" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Network Optimizer" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchNetworkOpt" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="FPS/Ping Overlay" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchFloatingOverlay" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#1A1A2E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎯 SENSITIVITY" android:textColor="#00E5FF"
+                    android:textSize="13sp" android:textStyle="bold" android:paddingBottom="10dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Touch Sensitivity" android:textColor="#CCCCCC" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvSensValue" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="50%" android:textColor="#00E5FF" android:textSize="12sp" />
+                </LinearLayout>
+                <SeekBar android:id="@+id/seekbarSensitivity" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:max="100" android:progress="50"
+                    android:progressTint="#00E5FF" android:thumbTint="#00E5FF" android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button android:id="@+id/btnApply" android:layout_width="match_parent"
+            android:layout_height="52dp" android:text="✅ APPLY SETTINGS"
+            android:textColor="#000000" android:textStyle="bold"
+            android:backgroundTint="#00E5FF" android:layout_marginBottom="10dp" />
+        <Button android:id="@+id/btnLaunchCODM" android:layout_width="match_parent"
+            android:layout_height="52dp" android:text="🚀 APPLY and LAUNCH CODM"
+            android:textColor="#000000" android:textStyle="bold"
+            android:backgroundTint="#FF6D00" android:layout_marginBottom="10dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="24dp">
+            <Button android:id="@+id/btnBackupConfig" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                android:text="💾 Backup" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+            <Button android:id="@+id/btnRestoreConfig" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                android:text="♻️ Restore" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

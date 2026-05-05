@@ -1,22 +1,26 @@
 [
     {
-        "merged": "com.zaman.gfxtool.app-debug-31:/drawable_ic_logo.xml.flat",
-        "source": "com.zaman.gfxtool.app-main-33:/drawable/ic_logo.xml"
+        "merged": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-debug-31:/layout_activity_splash.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-main-33:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.zaman.gfxtool.app-debug-31:/layout_activity_splash.xml.flat",
-        "source": "com.zaman.gfxtool.app-main-33:/layout/activity_splash.xml"
+        "merged": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-debug-31:/layout_overlay_fps.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-main-33:/layout/overlay_fps.xml"
     },
     {
-        "merged": "com.zaman.gfxtool.app-debug-31:/layout_overlay_fps.xml.flat",
-        "source": "com.zaman.gfxtool.app-main-33:/layout/overlay_fps.xml"
+        "merged": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-debug-31:/drawable_ic_logo.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-main-33:/drawable/ic_logo.xml"
+    },
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-debug-31:/drawable_spinner_bg.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-main-33:/drawable/spinner_bg.xml"
+    },
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.6/com.zaman.gfxtool.app-main-33:/layout/activity_main.xml"
     },
     {
         "merged": "com.zaman.gfxtool.app-debug-31:/layout_activity_main.xml.flat",
         "source": "com.zaman.gfxtool.app-main-33:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.zaman.gfxtool.app-debug-31:/drawable_spinner_bg.xml.flat",
-        "source": "com.zaman.gfxtool.app-main-33:/drawable/spinner_bg.xml"
     }
 ]

@@ -3099,6 +3099,10 @@ id btnApply
 id btnBackupConfig
 id btnLaunchCODM
 id btnRestoreConfig
+id btnScreen13
+id btnScreen65
+id btnScreen68
+id btnScreen83
 id buttonPanel
 id cancel_button
 id center
@@ -3418,6 +3422,7 @@ id switchBatterySaver
 id switchFloatingOverlay
 id switchMotionBlur
 id switchNetworkOpt
+id switchThermalFootstep
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -4482,6 +4487,7 @@ style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_ZamanGFX
 style Theme_ZamanGFX_Splash
+style Theme_ZamanGFXTool
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

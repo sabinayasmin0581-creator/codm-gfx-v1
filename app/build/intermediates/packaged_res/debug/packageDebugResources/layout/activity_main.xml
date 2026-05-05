@@ -115,6 +115,20 @@
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:paddingVertical="6dp">
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Thermal Footstep" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchThermalFootstep" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Thermal Footstep" android:textColor="#CCCCCC" android:textSize="13sp" />
+                    <Switch android:id="@+id/switchThermalFootstep" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:text="Anti-Thermal Throttle" android:textColor="#CCCCCC" android:textSize="13sp" />
                     <Switch android:id="@+id/switchAntiThrottle" android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:thumbTint="#00E5FF" android:trackTint="#2A2A3E" />
@@ -162,6 +176,29 @@
             android:layout_height="52dp" android:text="🚀 APPLY and LAUNCH CODM"
             android:textColor="#000000" android:textStyle="bold"
             android:backgroundTint="#FF6D00" android:layout_marginBottom="10dp" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="📱 Screen Size"
+            android:textColor="#00E5FF" android:textStyle="bold"
+            android:textSize="13sp" android:layout_marginBottom="6dp" android:layout_marginTop="4dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btnScreen65" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1" android:layout_marginEnd="4dp"
+                android:text="6.5&quot;" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+            <Button android:id="@+id/btnScreen68" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1" android:layout_marginEnd="4dp"
+                android:text="6.8&quot;" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+            <Button android:id="@+id/btnScreen83" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1" android:layout_marginEnd="4dp"
+                android:text="8.3&quot;" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+            <Button android:id="@+id/btnScreen13" android:layout_width="0dp"
+                android:layout_height="44dp" android:layout_weight="1"
+                android:text="13&quot;" android:textColor="#FFFFFF" android:textSize="12sp"
+                android:backgroundTint="#1E3A5F" />
+        </LinearLayout>
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="horizontal" android:layout_marginBottom="24dp">
             <Button android:id="@+id/btnBackupConfig" android:layout_width="0dp"

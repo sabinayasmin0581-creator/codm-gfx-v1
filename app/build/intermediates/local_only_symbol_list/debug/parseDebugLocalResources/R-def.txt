@@ -6,6 +6,10 @@ id btnApply
 id btnBackupConfig
 id btnLaunchCODM
 id btnRestoreConfig
+id btnScreen13
+id btnScreen65
+id btnScreen68
+id btnScreen83
 id rbBalanced
 id rbBattery
 id rbCompetitive
@@ -26,6 +30,7 @@ id switchBatterySaver
 id switchFloatingOverlay
 id switchMotionBlur
 id switchNetworkOpt
+id switchThermalFootstep
 id tvOverlayFPS
 id tvOverlayPing
 id tvScreenScaleValue
@@ -35,4 +40,5 @@ layout activity_splash
 layout overlay_fps
 string app_name
 style Theme.ZamanGFX
+style Theme.ZamanGFXTool
 style Theme.ZamanGFX.Splash

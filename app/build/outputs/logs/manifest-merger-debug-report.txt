@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:1-40:12
 MERGED from [com.google.android.material:material:1.12.0] /home/codespace/.gradle/caches/transforms-4/61c7acaba160e09f048a2c9cb89f1b15/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/codespace/.gradle/caches/transforms-4/61c17fc885aff9a54d94cfab56905f44/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/codespace/.gradle/caches/transforms-4/9346ab6aafc40c73d868f8cb25ad6eda/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -46,7 +46,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/c
 MERGED from [androidx.print:print:1.0.0] /home/codespace/.gradle/caches/transforms-4/d3c884fa679a06e3a691e54eed75e668/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/codespace/.gradle/caches/transforms-4/9650033b37bb56aa0deffb33f491335d/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml
@@ -55,48 +54,58 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/codespace/
 	xmlns:android
 		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:4:5-78
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:3:5-77
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:4:22-75
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:3:22-75
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:5:5-77
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:4:5-76
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:5:22-74
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:4:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:6:5-89
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:5:5-88
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:6:22-86
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:5:22-86
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:7:22-77
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:8:5-107
+	android:maxSdkVersion
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:8:79-105
 	android:name
 		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:8:22-78
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:9:5-81
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:9:5-106
+	android:maxSdkVersion
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:9:78-104
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:9:22-78
-uses-permission#android.permission.VIBRATE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:10:5-66
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:10:22-63
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:11:5-79
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:10:22-79
+queries
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:11:5-15:15
+package#com.activision.callofduty.shooter
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:12:9-68
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:11:22-76
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:12:5-76
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:12:18-66
+package#com.tencent.ig
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:13:9-49
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:12:22-73
-uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:13:5-95
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:13:18-47
+package#com.garena.game.codm
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:14:9-55
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:13:22-92
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:14:18-53
 application
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:14:5-40:19
-INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:14:5-40:19
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:16:5-39:19
+INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:16:5-39:19
 MERGED from [com.google.android.material:material:1.12.0] /home/codespace/.gradle/caches/transforms-4/61c7acaba160e09f048a2c9cb89f1b15/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/codespace/.gradle/caches/transforms-4/61c7acaba160e09f048a2c9cb89f1b15/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/codespace/.gradle/caches/transforms-4/9346ab6aafc40c73d868f8cb25ad6eda/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -117,74 +126,66 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/codespace/.gradle/cac
 		INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /home/codespace/.gradle/caches/transforms-4/da6dae1a7818fe5e5cec32306397e7da/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:17:9-41
-	android:hardwareAccelerated
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:19:9-43
-	android:largeHeap
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:20:9-33
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:19:9-41
+	android:roundIcon
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:20:9-46
 	android:icon
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:18:9-41
 	android:allowBackup
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:18:9-46
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:22:9-50
 activity#com.zaman.gfxtool.SplashActivity
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:21:9-27:20
-	android:screenOrientation
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:22:58-94
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:23:9-28:20
 	android:exported
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:21:50-73
-	android:theme
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:22:13-57
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:23:50-73
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:21:19-49
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:23:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:23:13-26:29
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:25:17-68
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.zaman.gfxtool.MainActivity
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:28:9-112
-	android:screenOrientation
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:28:73-109
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:9-74
 	android:exported
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:28:48-72
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:48-72
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:28:19-47
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:19-47
 service#com.zaman.gfxtool.FloatingService
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:9-34:19
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:30:9-33:19
 	android:exported
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:50-74
-	android:permission
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:31:13-71
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:30:50-74
 	android:foregroundServiceType
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:30:13-55
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:31:13-55
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:29:18-49
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:30:18-49
 property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:32:13-33:50
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:32:13-108
 	android:value
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:33:17-47
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:32:83-106
 	android:name
 		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:32:23-82
 receiver#com.zaman.gfxtool.BootReceiver
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:35:9-39:20
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:34:9-38:20
 	android:exported
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:35:48-71
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:34:48-71
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:35:19-47
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:34:19-47
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:36:13-38:29
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:35:13-37:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:37:17-79
+ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:36:17-78
 	android:name
-		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:37:25-76
+		ADDED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml:36:25-76
 uses-sdk
 INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /workspaces/codm-gfx-v1/app/src/main/AndroidManifest.xml
